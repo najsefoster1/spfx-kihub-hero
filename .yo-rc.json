@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.1",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "ki-hub-hero",
+    "libraryId": "93f6412c-022b-44bd-ad30-af86d5e96e30",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "KIHubHero",
+    "solutionShortDescription": "KIHubHero description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

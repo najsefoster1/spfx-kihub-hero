@@ -1,0 +1,63 @@
+{
+  "id": "c6c6d8d0-7e2e-4b3a-b5d1-9c0f8b7a1234",
+  "alias": "KIHubHeroWebPart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "cf066440-0614-43d6-98ae-0b31cf14c7c3",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "KIHub Hero"
+      },
+      "description": {
+        "default": "A custom animated hero banner for the Knowledge & Innovation Hub."
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "title": "Knowledge & Innovation Hub",
+        "rotatingWords": "Learn|Build|Automate|Explore|Improve",
+        "subtitle": "Your central place for AI, automation, reporting, and digital tools across THC.",
+        "button1Text": "Explore Tools",
+        "button1Link": "https://txhistory.sharepoint.com/sites/THCKnowledgeInnovation/SitePages/Home.aspx",
+        "button2Text": "Open Copilot",
+        "button2Link": "https://m365.cloud.microsoft/chat",
+        "button3Text": "Sign Up for Training",
+        "button3Link": "https://txhistory.sharepoint.com/sites/THCKnowledgeInnovation/SitePages/TrainingHub.aspx",
+        "button4Text": "Get Support",
+        "button4Link": "mailto:AIadmin@thc.texas.gov",
+        "showButtons": true
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "ki-hub-hero-web-part",
+    "scriptResources": {
+      "ki-hub-hero-web-part": {
+        "type": "path",
+        "path": "ki-hub-hero-web-part_3322211342ff74aa9061.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.22.2"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.22.2"
+      }
+    }
+  }
+}

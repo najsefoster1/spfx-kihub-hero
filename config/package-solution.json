@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "kihub-hero-client-side-solution",
+    "id": "d2d17d23-7cae-4f44-b037-4be3a79e8c3d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Najse Foster",
+      "websiteUrl": "https://txhistory.sharepoint.com",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "KIHub animated hero web part"
+      },
+      "longDescription": {
+        "default": "Custom animated hero web part for the THC Knowledge & Innovation Hub"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": [
+        "Productivity"
+      ]
+    },
+    "features": [
+      {
+        "title": "KIHub Hero Feature",
+        "description": "Deploys the KIHub Hero web part.",
+        "id": "1eec68dd-e12f-40b5-8f29-bce770b4ff20",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/kihub-hero.sppkg"
+  }
+}

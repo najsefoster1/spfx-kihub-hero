@@ -1,0 +1,243 @@
+.kiHubHero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 48px 40px;
+  min-height: 340px;
+  background: linear-gradient(135deg, #f6f6f7 0%, #ffffff 45%, #f4f1f1 100%);
+  border: 1px solid #e5d9d9;
+  box-shadow: 0 12px 28px rgba(88, 20, 26, 0.08);
+}
+
+.backgroundGlow {
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(164, 35, 44, 0.18) 0%, rgba(164, 35, 44, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatGlow 8s ease-in-out infinite;
+}
+
+.backgroundGlowTwo {
+  position: absolute;
+  bottom: -70px;
+  left: -70px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(122, 122, 122, 0.1) 0%, rgba(122, 122, 122, 0) 72%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatGlowAlt 10s ease-in-out infinite;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #8f1d24;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #7f1d1d;
+}
+
+.rotatingLine {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.rotatingWord {
+  display: inline-block;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2d2d2d;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heroSubtitle {
+  margin: 0;
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.primaryButton,
+.secondaryButton {
+  text-decoration: none !important;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #a4232c 0%, #7f1d1d 100%);
+  color: #ffffff !important;
+  box-shadow: 0 8px 18px rgba(127, 29, 29, 0.22);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(127, 29, 29, 0.28);
+}
+
+.secondaryButton {
+  background: #ffffff;
+  border: 1px solid #d7c3c3;
+  color: #7f1d1d !important;
+}
+
+.secondaryButton:hover {
+  transform: translateY(-2px);
+  border-color: #a4232c;
+  box-shadow: 0 8px 16px rgba(127, 29, 29, 0.1);
+}
+
+.rightContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featureCard {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 22px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(164, 35, 44, 0.12);
+  box-shadow: 0 10px 26px rgba(127, 29, 29, 0.08);
+}
+
+.featureLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #a4232c;
+  margin-bottom: 10px;
+}
+
+.featureTitle {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+}
+
+.featureBody {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #565656;
+  margin-bottom: 18px;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7f1d1d;
+  background: #f9eeee;
+  border: 1px solid #efd3d3;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(12px) translateX(-8px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes floatGlowAlt {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@media (max-width: 900px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .rightContent {
+    justify-content: flex-start;
+  }
+
+  .heroTitle {
+    font-size: 34px;
+  }
+
+  .rotatingWord {
+    font-size: 28px;
+  }
+}

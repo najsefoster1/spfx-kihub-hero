@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ki-hub-hero-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/kiHubHero/KiHubHeroWebPart.js",
+          "manifest": "./src/webparts/kiHubHero/KiHubHeroWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "KiHubHeroWebPartStrings": "lib/webparts/kiHubHero/loc/{locale}.js"
+  }
+}
