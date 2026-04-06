@@ -45,7 +45,7 @@ gulp package-solution --ship
 
 Add your hero section screenshot to the assets folder and reference it here:
 
-![Hero Section](assets/kihub-hero.png)
+![Hero Section](/kihub-hero.png)
 
 ## Author
 
